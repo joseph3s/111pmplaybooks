@@ -1,0 +1,15 @@
+
+PLAY [My Test Playbook] ********************************************************************************************
+
+TASK [Gathering Facts] *********************************************************************************************
+ok: [172.31.1.183]
+ok: [172.31.11.53]
+
+TASK [Install package] *********************************************************************************************
+fatal: [172.31.11.53]: FAILED! => {"changed": false, "msg": "value of state must be one of: absent, installed, latest, present, removed, got: intsalled"}
+fatal: [172.31.1.183]: FAILED! => {"changed": false, "msg": "value of state must be one of: absent, installed, latest, present, removed, got: intsalled"}
+
+PLAY RECAP *********************************************************************************************************
+172.31.1.183               : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+172.31.11.53               : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+
